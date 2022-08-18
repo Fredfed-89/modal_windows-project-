@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <!-- @include('partials/header.html') -->
+    <main class="main">
+
+      <div class="container">
+        <div class="inner">
+          <div class="box-1">
+            <button class="btn btn-one btn-reset" type="button" data-modal-button="modal-1">
+              <span>Modal Top</span>
+            </button>
+          </div>
+
+          <div class="modal-fade hidden" id="modal-1" data-modal>
+            <div class="modal-window">
+              <div class="modal__top">
+                <span class="modal__title modal__title--icon">Modal Top</span>
+                <button class="modal__close-btn btn-reset" data-modal-close></button>
+              </div>
+              <p class="modal__text">
+                In user interface design for computer applications, a modal window is a graphical control element
+                subordinate to an application's main window
+              </p>
+              <div class="modal__btns">
+                <button class="modal__cancel btn-reset">Cancel</button>
+                <button class="modal__confirm btn-reset">Confirm</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="box-2">
+          <button class="btn btn-two btn-reset">
+            <span>HOVER ME</span>
+          </button>
+        </div> -->
+
+          <div class="box-3">
+            <button class="btn btn-three btn-reset" type="button" data-modal-button="modal-2">
+              <span>Modal Bottom</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-fade hidden" id="modal-2" data-modal>
+          <div class="modal-two">
+            <button class="modal-two__close-btn btn-reset" data-modal-close></button>
+            <span class="modal-two__title">Sign Up</span>
+            <p class="modal-two__text">
+              Please enter credentials that will be used throught the registration process. For instutions and compaies
+              this should be the login of your primary contact responsible for the registration process.
+            </p>
+            <form class="modal-two__form" action="#">
+              <label class="modal-two__label-mail">
+                <input class="modal-two__input modal-two__input--mail" type="mail" placeholder="Enter your email">
+              </label>
+              <label class="modal-two__label-lock">
+                <input class="modal-two__input-lock modal-two__input-lock--lock" type="password"
+                  placeholder="Enter your password" required minlength="6" size="6" inputmode="numeric">
+                <button class="modal-two__password-visible btn-reset"
+                  aria-label="button to switch the visibility or invisibility of the password when entering"></button>
+              </label>
+              <p class="modal-two__descr">
+                Minimum 6 characters, at least one number, and special chareacter
+              </p>
+              <label class="modal-two__label-lock-again">
+                <input class="modal-two__input-lock-again modal-two__input-lock-again--lock-again" type="password"
+                  placeholder="Enter your password again" required minlength="6" size="6" inputmode="numeric">
+                <button class="modal-two__password-visible btn-reset"
+                  aria-label="button to switch the visibility or invisibility of the password when entering"></button>
+              </label>
+              <label class="custom-checkbox-top">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">I have read, undrestood and accept the </span>
+                <a class="custom-checkbox__link" href="#">Terms and Conditions</a>
+              </label>
+              <label class="custom-checkbox-bottom">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">I have read, undrestood and accept the </span>
+                <a class="custom-checkbox__link" href="#">Privacy Policy</a>
+              </label>
+              <button class="modal-two__create-btn btn-reset">Create Account</button>
+              <span class="modal-two__or">or</span>
+              <button class="modal-two__google-btn btn-reset">
+                <span class="modal-two__google-btn-text">Continue with Google</span>
+              </button>
+            </form>
+            <div class="modal-two__bottom">
+              <span class="modal-two__have">Already have an account?</span>
+              <a class="modal-two__signin" href="#">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <!-- @include('partials/footer.html') -->
+  </div>
+</body>
+
+</html>
