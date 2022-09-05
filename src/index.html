@@ -7,6 +7,7 @@
   <div class="site-container">
     <!-- @include('partials/header.html') -->
     <main class="main">
+      <h1 class="visually-hidden">my modal windows</h1>
 
       <div class="container">
         <div class="inner">
@@ -54,40 +55,42 @@
               Please enter credentials that will be used throught the registration process. For instutions and compaies
               this should be the login of your primary contact responsible for the registration process.
             </p>
-            <form class="modal-two__form" action="#">
-              <label class="modal-two__label-mail">
-                <input class="modal-two__input modal-two__input--mail" type="mail" placeholder="Enter your email">
-              </label>
-              <label class="modal-two__label-lock">
-                <input class="modal-two__input-lock modal-two__input-lock--lock" type="password"
-                  placeholder="Enter your password" required minlength="6" size="6" inputmode="numeric">
-                <button class="modal-two__password-visible btn-reset"
-                  aria-label="button to switch the visibility or invisibility of the password when entering"></button>
-              </label>
-              <p class="modal-two__descr">
-                Minimum 6 characters, at least one number, and special chareacter
-              </p>
-              <label class="modal-two__label-lock-again">
-                <input class="modal-two__input-lock-again modal-two__input-lock-again--lock-again" type="password"
-                  placeholder="Enter your password again" required minlength="6" size="6" inputmode="numeric">
-                <button class="modal-two__password-visible btn-reset"
-                  aria-label="button to switch the visibility or invisibility of the password when entering"></button>
-              </label>
-              <label class="custom-checkbox-top">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__content">I have read, undrestood and accept the </span>
-                <a class="custom-checkbox__link" href="#">Terms and Conditions</a>
-              </label>
-              <label class="custom-checkbox-bottom">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__content">I have read, undrestood and accept the </span>
-                <a class="custom-checkbox__link" href="#">Privacy Policy</a>
-              </label>
-              <button class="modal-two__create-btn btn-reset">Create Account</button>
-              <span class="modal-two__or">or</span>
-              <button class="modal-two__google-btn btn-reset">
-                <span class="modal-two__google-btn-text">Continue with Google</span>
-              </button>
+            <form class="modal-two__form">
+              <fieldset class="modal-two__fieldset">
+                <label class="modal-two__label-mail">
+                  <input class="modal-two__input modal-two__input--mail" type="mail" placeholder="Enter your email">
+                </label>
+                <label class="modal-two__label-lock">
+                  <input class="modal-two__input-lock modal-two__input-lock--lock" type="password"
+                    placeholder="Enter your password" required minlength="6" size="6" inputmode="numeric">
+                  <button class="modal-two__password-visible btn-reset"
+                    aria-label="button to switch the visibility or invisibility of the password when entering"></button>
+                </label>
+                <p class="modal-two__descr">
+                  Minimum 6 characters, at least one number, and special chareacter
+                </p>
+                <label class="modal-two__label-lock-again">
+                  <input class="modal-two__input-lock-again modal-two__input-lock-again--lock-again" type="password"
+                    placeholder="Enter your password again" required minlength="6" size="6" inputmode="numeric">
+                  <button class="modal-two__password-visible btn-reset"
+                    aria-label="button to switch the visibility or invisibility of the password when entering"></button>
+                </label>
+                <label class="custom-checkbox-top">
+                  <input type="checkbox" class="custom-checkbox__field">
+                  <span class="custom-checkbox__content">I have read, undrestood and accept the </span>
+                  <a class="custom-checkbox__link" href="#">Terms and Conditions, and Privacy Policy</a>
+                </label>
+                <!-- <label class="custom-checkbox-bottom">
+                  <input type="checkbox" class="custom-checkbox__field">
+                  <span class="custom-checkbox__content">I have read, undrestood and accept the </span>
+                  <a class="custom-checkbox__link" href="#">Privacy Policy</a>
+                </label> -->
+                <button class="modal-two__create-btn btn-reset">Create Account</button>
+                <span class="modal-two__or">or</span>
+                <button class="modal-two__google-btn btn-reset">
+                  <span class="modal-two__google-btn-text">Continue with Google</span>
+                </button>
+              </fieldset>
             </form>
             <div class="modal-two__bottom">
               <span class="modal-two__have">Already have an account?</span>
